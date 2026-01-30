@@ -1,0 +1,10 @@
+{
+    "mcpServers": {
+        "laravel-boost": {
+            "command": "/bin/bash",
+            "args": [
+                "./bin/boost-mcp-sail"
+            ]
+        }
+    }
+}

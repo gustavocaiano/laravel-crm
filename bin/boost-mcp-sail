@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# IMPORTANT: This script must not print anything to stdout/stderr,
+# because MCP uses stdio for the JSON-RPC transport.
+
+cd "$(dirname "$0")/.."
+
+./vendor/bin/sail up -d >/dev/null 2>&1 || true
+
+exec ./vendor/bin/sail artisan boost:mcp
