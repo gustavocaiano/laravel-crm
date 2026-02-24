@@ -1,4 +1,5 @@
 .env
+.env.prod.example
 .env.testing
 .idea
 .php_cs.cache
@@ -27,6 +28,7 @@ package-lock.json
 /vendor
 yarn.lock
 yarn-error.log
+.DS_Store
 
 # Playwright
 node_modules/
